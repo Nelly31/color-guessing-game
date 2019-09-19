@@ -15,7 +15,7 @@ easyButton.addEventListener("click", function() {
   hardButton.classList.remove("selected")
   numSquares = 3;
   colors = generateRandomColors(numSquares);
-  h1.style.backgroundColor = "#232323";
+  h1.style.backgroundColor = "steelblue";
   pickedColor = pickColor();
   colorDisplay.textContent = pickedColor.toUpperCase();
   for (let i = 0; i <squares.length; i++) {
@@ -32,7 +32,7 @@ hardButton.addEventListener("click", function() {
   easyButton.classList.remove("selected")
   numSquares = 6
   colors = generateRandomColors(numSquares);
-  h1.style.backgroundColor = "#232323";
+  h1.style.backgroundColor = "steelblue";
   pickedColor = pickColor();
   colorDisplay.textContent = pickedColor.toUpperCase();
   for (let i = 0; i <squares.length; i++) {
@@ -46,6 +46,8 @@ resetButton.addEventListener("click", function(){
   colors = generateRandomColors(numSquares);
   pickedColor = pickColor();
   colorDisplay.textContent = pickedColor.toUpperCase();
+  messageDisplay.textContent = "";
+  this.textContent = "New Colors";
 
   for (let i = 0; i < squares.length; i++) {
     // add initial colors to squares
